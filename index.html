@@ -61,7 +61,7 @@
                     <div class="px-8">
                         <h1 class="text-4xl lg:text-7xl font-extrabold text-white">End-to-End Travel with <br><span class="text-green-600">P Paribahan</span></h1>
                         <p class="py-6 lg:px-60 text-white">Embark on a seamless journey with P Paribahan - your gateway to end-to-end travel excellence. From the moment you plan your trip to the final destination, we are committed to providing you with a hassle-free and comfortable travel experience. Enjoy the convenience of easy booking, reliable services, and a journey filled with comfort and safety.</p>
-                        <button class="btn bg-green-600 border-none font-extrabold">Buy Tickets</button>
+                        <button><a class="btn bg-green-600 border-none font-extrabold" href="#p-paribahan">Buy Tickets</a></button>
                     </div>
                 </div>
                 <!-- Outside content -->
@@ -120,10 +120,10 @@
             </div>
         </section>
         <!-- P Paribahan -->
-        <section class="border-t-4 border-green-500 rounded-t-3xl mx-auto lg:w-11/12 bg-gray-100">
+        <section id="p-paribahan" class="border-t-4 border-green-500 rounded-t-3xl mx-auto lg:w-11/12 bg-gray-100">
             <!-- text top -->
             <div class="mt-4 lg:mt-16">
-                <h1 class="text-4xl text-center font-extrabold">P.H Paribahan</h1>
+                <h1 class="text-4xl text-center font-extrabold">P Paribahan</h1>
                 <p class="py-6 lg:px-60 text-center">Secure your seat with P.H Paribahan! Book hassle-free tickets online, ensuring a smooth journey with comfort and reliability.</p>
                 <!-- card section -->
                 <div class="lg:flex bg-white rounded-lg px-2 lg:px-10 items-center gap-2 lg:gap-16 p-3 lg:p-24">
@@ -140,7 +140,7 @@
                             </div>
                             <div class="">
                                 <a class="btn text-green-500 border-green-500 bg-green-100">
-                                    <i class="fa-solid fa-bus"></i><span class="font-sans">40</span>
+                                    <i class="fa-solid fa-bus"></i><span id="available" class="font-sans">40</span>
                                     <p>Seats Left</p>
                                 </a>
                             </div>
@@ -177,9 +177,13 @@
                 <div class="col-span-2">
                     <h1 class="text-2xl font-bold mb-4">Select Your Seat</h1>
                     <div class="flex justify-between border-y-2 border-dotted py-4">
-                        <h1 class="text-xl font-semibold"><i class="fa-solid fa-bus-simple px-2"></i><span class="font-sans mr-2">40</span>Available</h1>
-                        <h1 class="text-xl font-semibold text-green-500"><i class="fa-solid fa-bus-simple px-2"></i><span class="font-sans mr-2">0</span>Selected</h1>
+                        <h1 class="text-xl font-semibold"><i class="fa-solid fa-bus-simple px-2"></i>Available</h1>
+                        <h1 class="text-xl font-semibold text-green-500"><i class="fa-solid fa-bus-simple px-2"></i>
+                            <span id="selected" class="font-sans mr-2" hidden>0</span>
+                            Selected
+                        </h1>
                     </div>
+                    <!-- Set section -->
                     <div class="w-full grid grid-cols-1 mt-9 px-3">
                         <div class="text-right">
                             <button class="btn w-12 lg:w-24">Driver</button>
@@ -187,82 +191,82 @@
                         <!-- A -->
                         <div class="flex justify-between font-sans my-3">
                             <button class="w-12 lg:w-24">A</button>
-                            <button class="btn w-12 lg:w-24">A1</button>
-                            <button class="btn w-12 lg:w-24">A2</button>
-                            <button class="btn w-12 lg:w-24">A3</button>
-                            <button class="btn w-12 lg:w-24">A4</button>
+                            <button id="a1" class="btn w-12 lg:w-24">A1</button>
+                            <button id="a2" class="btn w-12 lg:w-24">A2</button>
+                            <button id="a3" class="btn w-12 lg:w-24">A3</button>
+                            <button id="a4" class="btn w-12 lg:w-24">A4</button>
                         </div>
                         <!-- B-->
                         <div class="flex justify-between font-sans my-3">
                             <button class="w-12 lg:w-24">B</button>
-                            <button class="btn w-12 lg:w-24">B1</button>
-                            <button class="btn w-12 lg:w-24">B2</button>
-                            <button class="btn w-12 lg:w-24">B3</button>
-                            <button class="btn w-12 lg:w-24">B4</button>
+                            <button id="b1" class="btn w-12 lg:w-24">B1</button>
+                            <button id="b2" class="btn w-12 lg:w-24">B2</button>
+                            <button id="b3" class="btn w-12 lg:w-24">B3</button>
+                            <button id="b4" class="btn w-12 lg:w-24">B4</button>
                         </div>
                         <!-- C-->
                         <div class="flex justify-between font-sans my-3">
                             <button class="w-12 lg:w-24">C</button>
-                            <button class="btn w-12 lg:w-24">C1</button>
-                            <button class="btn w-12 lg:w-24">C2</button>
-                            <button class="btn w-12 lg:w-24">C3</button>
-                            <button class="btn w-12 lg:w-24">C4</button>
+                            <button id="c1" class="btn w-12 lg:w-24">C1</button>
+                            <button id="c2" class="btn w-12 lg:w-24">C2</button>
+                            <button id="c3" class="btn w-12 lg:w-24">C3</button>
+                            <button id="c4" class="btn w-12 lg:w-24">C4</button>
                         </div>
                         <!-- D-->
                         <div class="flex justify-between font-sans my-3">
                             <button class="w-12 lg:w-24">D</button>
-                            <button class="btn w-12 lg:w-24">D1</button>
-                            <button class="btn w-12 lg:w-24">D2</button>
-                            <button class="btn w-12 lg:w-24">D3</button>
-                            <button class="btn w-12 lg:w-24">D4</button>
+                            <button id="d1" class="btn w-12 lg:w-24">D1</button>
+                            <button id="d2" class="btn w-12 lg:w-24">D2</button>
+                            <button id="d3" class="btn w-12 lg:w-24">D3</button>
+                            <button id="d4" class="btn w-12 lg:w-24">D4</button>
                         </div>
                         <!-- E-->
                         <div class="flex justify-between font-sans my-3">
                             <button class="w-12 lg:w-24">E</button>
-                            <button class="btn w-12 lg:w-24">E1</button>
-                            <button class="btn w-12 lg:w-24">E2</button>
-                            <button class="btn w-12 lg:w-24">E3</button>
-                            <button class="btn w-12 lg:w-24">E4</button>
+                            <button id="e1" class="btn w-12 lg:w-24">E1</button>
+                            <button id="e2" class="btn w-12 lg:w-24">E2</button>
+                            <button id="e3" class="btn w-12 lg:w-24">E3</button>
+                            <button id="e4" class="btn w-12 lg:w-24">E4</button>
                         </div>
                         <!-- F-->
                         <div class="flex justify-between font-sans my-3">
                             <button class="w-12 lg:w-24">F</button>
-                            <button class="btn w-12 lg:w-24">F1</button>
-                            <button class="btn w-12 lg:w-24">F2</button>
-                            <button class="btn w-12 lg:w-24">F3</button>
-                            <button class="btn w-12 lg:w-24">F4</button>
+                            <button id="f1" class="btn w-12 lg:w-24">F1</button>
+                            <button id="f2" class="btn w-12 lg:w-24">F2</button>
+                            <button id="f3" class="btn w-12 lg:w-24">F3</button>
+                            <button id="f4" class="btn w-12 lg:w-24">F4</button>
                         </div>
                         <!-- G-->
                         <div class="flex justify-between font-sans my-3">
                             <button class="w-12 lg:w-24">G</button>
-                            <button class="btn w-12 lg:w-24">G1</button>
-                            <button class="btn w-12 lg:w-24">G2</button>
-                            <button class="btn w-12 lg:w-24">G3</button>
-                            <button class="btn w-12 lg:w-24">G4</button>
+                            <button id="g1" class="btn w-12 lg:w-24">G1</button>
+                            <button id="g2" class="btn w-12 lg:w-24">G2</button>
+                            <button id="g3" class="btn w-12 lg:w-24">G3</button>
+                            <button id="g4" class="btn w-12 lg:w-24">G4</button>
                         </div>
                         <!-- H-->
                         <div class="flex justify-between font-sans my-3">
                             <button class="w-12 lg:w-24">H</button>
-                            <button class="btn w-12 lg:w-24">H1</button>
-                            <button class="btn w-12 lg:w-24">H2</button>
-                            <button class="btn w-12 lg:w-24">H3</button>
-                            <button class="btn w-12 lg:w-24">H4</button>
+                            <button id="h1" class="btn w-12 lg:w-24">H1</button>
+                            <button id="h2" class="btn w-12 lg:w-24">H2</button>
+                            <button id="h3" class="btn w-12 lg:w-24">H3</button>
+                            <button id="h4" class="btn w-12 lg:w-24">H4</button>
                         </div>
                         <!-- I-->
                         <div class="flex justify-between font-sans my-3">
                             <button class="w-12 lg:w-24">I</button>
-                            <button class="btn w-12 lg:w-24">I1</button>
-                            <button class="btn w-12 lg:w-24">I2</button>
-                            <button class="btn w-12 lg:w-24">I3</button>
-                            <button class="btn w-12 lg:w-24">I4</button>
+                            <button id="i1" class="btn w-12 lg:w-24">I1</button>
+                            <button id="i2" class="btn w-12 lg:w-24">I2</button>
+                            <button id="i3" class="btn w-12 lg:w-24">I3</button>
+                            <button id="i4" class="btn w-12 lg:w-24">I4</button>
                         </div>
                         <!-- J-->
                         <div class="flex justify-between font-sans my-3">
                             <button class="w-12 lg:w-24">J</button>
-                            <button class="btn w-12 lg:w-24">J1</button>
-                            <button class="btn w-12 lg:w-24">J2</button>
-                            <button class="btn w-12 lg:w-24">J3</button>
-                            <button class="btn w-12 lg:w-24">J4</button>
+                            <button id="j1" class="btn w-12 lg:w-24">J1</button>
+                            <button id="j2" class="btn w-12 lg:w-24">J2</button>
+                            <button id="j3" class="btn w-12 lg:w-24">J3</button>
+                            <button id="j4" class="btn w-12 lg:w-24">J4</button>
                         </div>
                     </div>
                 </div>
@@ -272,29 +276,35 @@
                     <!-- card -->
                     <div class="bg-gray-100 p-7 rounded-lg">
                         <div class="grid grid-cols-3 font-bold font-sans border-b-2">
-                            <div>Seat <span class="bg-green-500 rounded-xl p-1">0</span></div>
+                            <div>Seat 
+                                <span id="seat_number" class="bg-green-500 rounded-xl p-1">0</span>
+                            </div>
                             <div>Class</div>
                             <div>Price</div>
                         </div>
-                        <div class="grid grid-cols-3 font-sans mt-4">
-                            <div>C2</div>
-                            <div>Economy</div>
-                            <div>550</div>
-                            <div>C2</div>
-                            <div>Economy</div>
-                            <div>550</div>
+                        <div id="ticket_show_section" class="grid grid-cols-3 font-sans mt-4">
+                            <!-- js -->
                         </div>
                         <div class="grid grid-cols-3 font-bold font-sans border-t-2 mt-4">
-                            <div class="col-span-2 mt-3">Total Price</div>
-                            <div class="mt-3">BDT<span>1100</span></div>
+                            <div class=" mt-3">Total Price</div>
+                            <div class="mt-3 text-right">BDT-  </div>
+                            <span id="total_price" class="mt-3">0</span>
                         </div>
-                        <div class="flex items-center mt-6">
-                            <input class="border-2 focus:outline-none p-2 rounded-l-xl flex-1" type="text" placeholder="Have you any Coupon?">
-                            <button class="btn bg-green-500 text-white font-bold">Apply</button>
+                        <!-- discount price -->
+                        <div class="grid grid-cols-3 font-bold font-sans border-t-2 mt-4">
+                            <div class=" mt-3">Discount</div>
+                            <div class="mt-3 text-right">BDT-  </div>
+                            <span id="discount_price" class="mt-3">0</span>
+                        </div>
+
+                        <div id="coupon_hide" class="flex items-center mt-6">
+                            <input id="coupon" class="border-2 focus:outline-none p-2 rounded-l-xl flex-1" type="text" placeholder="Have you any Coupon?">
+                            <button id="coupon-apply" class="btn text-white font-bold">Apply</button>
                         </div>
                         <div class="grid grid-cols-3 font-bold font-sans border-t-2 mt-4">
-                            <div class="col-span-2 mt-3">Grand Total</div>
-                            <div class="mt-3">BDT<span>1100</span></div>
+                            <div class="mt-3">Grand Total</div>
+                            <div class="mt-3 text-right">BDT-</div>
+                            <span id="grand_total" class="mt-3">0</span>
                         </div>
                     </div>
                     <!-- input -->
@@ -302,10 +312,10 @@
                         <h1 class="font-bold">Passenger Name*</h1>
                         <input type="text" placeholder="Enter Your Name" class="w-full p-3 border-2 focus:outline-none mt-3 rounded-xl" />
                         <h1 class="font-bold mt-5">Phone Number*</h1>
-                        <input type="text" placeholder="Enter Your Phone Number" class="w-full p-3 border-2 focus:outline-none mt-3 rounded-xl" />
+                        <input id="phone_number" type="number" placeholder="Enter Your Phone Number" class="w-full p-3 border-2 focus:outline-none mt-3 rounded-xl" />
                         <h1 class="font-bold mt-5">Email ID</h1>
-                        <input type="text" placeholder="Enter Your email id" class="w-full p-3 border-2 focus:outline-none mt-3 rounded-xl" />
-                        <button class="btn w-full font-bold bg-green-500 text-white hover:text-green-500 mt-9">Next</button>
+                        <input type="email" placeholder="Enter Your email id" class="w-full p-3 border-2 focus:outline-none mt-3 rounded-xl" />
+                        <button disabled id="next_button" class="btn w-full font-bold bg-green-600 text-white hover:text-green-500 mt-9"><a href="./complete.html">Next</a></button>
                     </form>
                     <a href="" class="underline text-gray-500">Terms & Conditions</a>
                     <a href="" class="underline text-gray-500">Cancellation Policy</a>
@@ -332,5 +342,10 @@
             </nav>
         </div>
     </footer>
+
+    <!-- JS link -->
+    <script src="./js/all_button.js"></script>
+    <script src="./js/sit_button.js"></script>
+    <script src="./js/ticket_sum.js"></script>
 </body>
 </html>
